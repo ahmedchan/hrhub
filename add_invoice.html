@@ -1,0 +1,114 @@
+<button type="button" class="close_modal" data-dismiss="modal" aria-label="Close"></button>
+
+<div class="modal-dialog modal-md modal-dialog-centered">
+	<div class="modal-content">
+		<div class="modal-body">
+			
+			<div class="ptmd pbmd plmd prmd">
+				<form action="" method="" class="form">
+					
+					<div class="form_row_split">
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Customer Name: <span class="required">*</span></label>
+							<input type="text" class="form_input" placeholder="customer..." >
+						</div>
+
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Service: <span class="required">*</span></label>
+							<input type="text" class="form_input" placeholder="service..." >
+						</div>
+					</div>
+
+					<div class="form_row mtxs">
+						<label for="" class="form_label">Descraption: </label>
+						<textarea class="form_input" placeholder="add descraption..."></textarea>
+					</div>
+					
+					<div class="form_row_split">
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Amount: <span class="required">*</span></label>
+							<input type="text" class="form_input" placeholder="amount..." >
+						</div>
+
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Tax: <span class="required">*</span></label>
+							<input type="text" class="form_input" placeholder="tax..." >
+						</div>
+					</div>
+
+					<div class="form_row_split">
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Issue Date: <span class="required">*</span></label>
+							<div class="date"><input type="text" class="form_input" ></div>
+						</div>
+
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Recived Date: <span class="required">*</span></label>
+							<div class="date"><input type="text" class="form_input" ></div>
+						</div>
+					</div>
+
+					<div class="form_row">
+						<label for="" class="form_label">Attach Invoice</label>
+						<div class="file_input">
+                      <input type="file" name="file[]" class="inputfile inputfile" data-multiple-caption="{count} files selected" multiple />
+                      <label for="" class="inputfile_label"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg> <span>Attach Invoice &hellip;</span></label>
+                 	</div>
+					</div>
+
+					
+					<div class="mtmd ptmd bt">
+						<h5>Inovice Details</h5>
+						
+						<div class="repeated_inputs" >
+							<div class="repeated_inputs_group ">
+								<div class="form_row_split">
+									<div class="form_row mtxs">
+										<label for="" class="form_label">Item Name: <span class="required">*</span></label>
+										<input type="text" name="name" class="form_input" placeholder="name..." >
+									</div>
+
+									<div class="form_row mtxs" style="max-width:100px;">
+										<label for="" class="form_label">Count: <span class="required">*</span></label>
+										<input type="text" name="count" class="form_input" placeholder="count..." >
+									</div>
+
+									<div class="form_row mtxs" style="max-width:100px;">
+										<label for="" class="form_label">Price: <span class="required">*</span></label>
+										<input type="text" name="price" class="form_input" placeholder="price..." >
+									</div>
+								</div>
+								<button type="button" class="repeated_inputs_button"><i class="la la-plus"></i></button>
+							</div>
+						</div>
+
+						<div class="form_row mtxs">
+							<label for="" class="form_label">Choose Template: <span class="required">*</span></label>
+							<select name="" id="" class="form_input">
+								<option value="">With header &amp; Footer</option>
+								<option value="">Without header &amp; Footer</option>
+								<option value="">With Mazeed Template</option>
+								<option value="">With DataStars Template</option>
+							</select>
+						</div>
+					</div>
+
+
+					<div class="form_row form_submit mtlg">
+						<div class="dropdown dropup">
+							<button type="button" class="button button_primary button_wide dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Create </button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+								<button class="dropdown-item" type="submit">Create Row</button>
+								<button class="dropdown-item" type="submit">Create and Generate Template</button>
+							</div>
+						</div>
+						
+						<button type="button" data-dismiss="modal" class="button button_link button_wide"> Cancel </button>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>

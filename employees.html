@@ -1,0 +1,365 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> HR Hub: Employees </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- open sans font from google cdn -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+	<link rel="apple-touch-icon" href="icon.png">
+	<!-- Place favicon.ico in the root directory -->
+	
+	<link rel="stylesheet" href="css/style.min.css">
+	
+	<script>
+	(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);
+	</script>
+</head>
+<body>
+
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="outer" id="outer">
+	<aside class="aside" id="aside">
+	<div class="logo"><h1><a href="index.html"><img src="img/hrhub_logo_icon.png" alt=""></a></h1></div>
+	<nav class="main_nav mblg">
+		<ul class="nav_items list-unstyled">
+			<li class="nav_item active"><a href="index.html"><i class="la la-home"></i></a></li>
+			<li class="nav_item"><a href="employees.html"><i class="la la-user"></i></a></li>
+			<li class="nav_item"><a href="bank_safe.html"><i class="la la-cc-mastercard"></i></a></li>
+			<li class="nav_item"><a href="invoice.html"><i class="la la-file-text"></i></a></li>
+			<li class="nav_item"><a href="setting.html"><i class="la la-gear"></i></a></li>
+		</ul>
+	</nav>
+	<ul class="account list-unstyled">
+		<li class="usr_account">
+			<figure class="img"><a href="profile.html"><img class="radius50" src="img/avatars/128.jpg" alt=""></a></figure>
+		</li>
+		<!-- <li><a href="#"><i class="la la-h-square"></i></a></li> -->
+		<!-- <li class="expand_menu"><a href="#"><i class="la la-expand"></i></a></li> -->
+	</ul>
+</aside>
+	<div class="content" id="content">
+		
+
+<header class="header" id="header">
+	<div class="header_top">
+	<div class="wrapper">
+		<div class="flex flex_content_sb flex_items_center flex_1">
+			<div class="brand_name"><h2>Mazeed.co</h2></div>
+			<form action="" method="" class="global_form">
+				<input type="search" name="search" placeholder="searching ... employees, news, task, event, topics...">
+				<button type="submit" class="submit_search"><i class="la la-search"></i></button>
+			</form>
+		</div>
+	</div>
+</div>
+	<div class="header_bottom" data-sticky="sticky">
+		<div class="wrapper">
+			<ul class="sub_nav list-unstyled flex">
+				<li><a href="index.html">Dashboard</a></li>
+				<li class="active"><a href="employees.html">Employees</a></li>
+				<li><a href="hiring.html">Hiring</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="departments.html">Departments</a></li>
+				<li class="has_count"><a href="notifications.html">Notifications <span class="notify_count">4</span></a></li>
+				<li><a href="hardwares.html">Hardwares</a></li>
+				<li><a href="policies.html">Policies</a></li>
+				<li><a href="templates.html">Templates</a></li>
+				<li><a href="company_tree.html">Company Tree</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<ol class="breadcrumb wrapper">
+	<li class="breadcrumb-item"><a href="http://mazeed.co" target="_blank">Mazeed</a></li>
+	<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+	<li class="breadcrumb-item active" aria-current="page">Employees</li>
+</ol>
+
+<main class="page" id="page">
+	<div class="wrapper">
+
+		<div class="toolbar">
+			<div class="toolbar_content">
+				<div class="form_row">
+					<label for="" class="form_label">Filter</label>
+					<div class="toggle">
+						<input type="radio" name="sizeBy" value="all" id="all_time" checked="checked" />
+						<label for="all_time">All</label>
+						<input type="radio" name="sizeBy" value="full_time" id="full_time" />
+						<label for="full_time">Full Time</label>
+						<input type="radio" name="sizeBy" value="part_time" id="part_time" />
+						<label for="part_time">Part Time</label>
+					</div>
+				</div>
+				<div class="form_row">
+					<label for="" class="form_label">Status</label>
+					<div class="select_wrapper">
+						<select name="" class="form_input" id="">
+							<option value="">Newest</option>
+							<option value="">Olders</option>
+						</select>
+					</div>
+				</div>
+				<div class="form_row">
+					<label for="" class="form_label">Find Employee</label>
+					<input type="text" class="form_input" placeholder="search...">
+				</div>
+				<div class="form_row">
+					<label for="" class="form_label">&nbsp;</label>
+					<div>
+						<button type="button" class="button button_default">Filter</button>
+					</div>
+				</div>
+			</div>
+			<div class="toolabr_actions">
+				<a href="javascript:void(0);" data-dismiss="modal" data-remote="add_employee.html" data-toggle="ajaxModal" class="button button_primary"><i class="la la-plus"></i> Add Employee</a>
+			</div>
+		</div>
+		
+		<div class="usrs">
+			<div class="ui_block usr_card b_all mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Ahmed Saeed</a>
+					<div class="usr_position">Senior UI, Front-End Developer</div>
+					<div class="usr_mail">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/64.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Ahmed Saeed</a>
+					<div class="usr_position">Senior UI, Front-End Developer</div>
+					<div class="usr_mail">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/64.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Ahmed Saeed</a>
+					<div class="usr_position">Senior UI, Front-End Developer</div>
+					<div class="usr_mail">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/64.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Ahmed Saeed</a>
+					<div class="usr_position">Senior UI, Front-End Developer</div>
+					<div class="usr_mail">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/64.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="ui_block usr_card b_all  mtsm mbsm">
+				<div class="usr_card_content">
+					<button class="delete" type="button" role="delete"><i class="la la-trash-o"></i></button>
+					<button data-dismiss="modal" data-remote="edit_employee.html" data-toggle="ajaxModal" class="edit" type="button" role="edit"><i class="la la-pencil"></i></button>
+					<figure class="avatar img"><a href="profile.html"><img src="img/avatars/29.jpg" alt=""></a></figure>
+					<a href="profile.html" class="usr_name">Mohamed Shehata</a>
+					<div class="usr_position">Senior Art Director, CEO</div>
+
+					<div class="usr_mail text_muted">asaeed@mazeed.co</div>
+					<div class="usr_phone">01067268000</div>
+					<div class="usr_desc"></div>
+				</div>
+				<ul class="usr_social flex">
+					<li><a href="#"><i class="la la-facebook"></i></a></li>
+					<li><a href="#"><i class="la la-twitter"></i></a></li>
+					<li><a href="#"><i class="la la-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</main>
+
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="js/app.min.js"></script>
+
+</body>
+</html>
